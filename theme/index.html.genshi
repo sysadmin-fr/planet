@@ -53,9 +53,8 @@
 </py:for>
 
 <div class="sidebar">
-<img src="images/logo.png" width="136" height="136" alt=""/>
 
-<h2>Subscriptions</h2>
+<h2>Abonnements</h2>
 <ul>
 <li py:for="feed in feeds">
 <a py:for="link in feed.links" py:if="link.rel == 'self' and 
@@ -69,9 +68,8 @@
 </ul>
 
 <p>
-<strong>Last updated:</strong><br/>
+<strong>Dernière mise à jour</strong><br/>
 $feed.updated<br/>
-<em>All times are UTC.</em><br/>
 <br/>
 Powered by:<br/>
 <a href="http://intertwingly.net/code/venus/"><img src="images/venus.png" width="80" height="15" alt="Planet Venus" border="0"/></a>
