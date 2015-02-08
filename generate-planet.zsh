@@ -1,8 +1,12 @@
 #!/usr/bin/env zsh
 
-set -e
-
 basedir=${0:h}
+
+cd ${basedir}
+basedir=.
+
+git fetch github
+
 FEEDS=${basedir}/feeds
 CONFIG_TPL=${basedir}/templates/config.ini
 CONFIG=${basedir}/config.ini
