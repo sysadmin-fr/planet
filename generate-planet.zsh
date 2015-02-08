@@ -6,6 +6,7 @@ cd ${basedir}
 basedir=.
 
 git fetch github
+git merge github/master
 
 FEEDS=${basedir}/feeds
 CONFIG_TPL=${basedir}/templates/config.ini
